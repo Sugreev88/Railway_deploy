@@ -9,7 +9,7 @@ const userroute = require("./routes/user_routes");
 app.use(express.json());
 
 app.use("/", userroute);
-
+app.use("/", userroute);
 app.get("/", (req, res) => {
   res.send("hello world");
 });
